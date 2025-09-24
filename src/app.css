@@ -24,6 +24,12 @@
 
 @import "tailwindcss";
 
+@layer base {
+    body {
+        font-family: "Poppins", system-ui;
+    }
+}
+
 @theme {
     --font-weight-*: initial;
     --font-weight-medium: 500;
