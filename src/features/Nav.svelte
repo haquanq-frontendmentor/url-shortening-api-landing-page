@@ -76,7 +76,7 @@
         <span class="group-aria-expanded:-rotate-45"></span>
       </button>
       <div
-        class="absolute inset-0 hidden items-start justify-center overflow-y-scroll bg-[hsla(0,0%,0%,0.5)] pt-24 pb-6 peer-aria-expanded:flex md:static md:block md:w-full md:bg-transparent md:p-0"
+        class="absolute inset-0 hidden items-start justify-center overflow-y-scroll bg-[hsla(0,0%,0%,0.5)] pt-24 pb-6 peer-aria-expanded:flex md:static md:block md:w-full md:overflow-auto md:bg-transparent md:p-0"
         id="mobile-menu"
         use:menuAction
       >
