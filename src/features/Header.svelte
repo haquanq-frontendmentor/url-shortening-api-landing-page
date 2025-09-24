@@ -4,7 +4,7 @@
   import Button from "../components/Button.svelte";
 </script>
 
-<header class="overflow-y-hidden">
+<header class="overflow-x-hidden">
   <Container>
     <div
       class="grid gap-x-8 gap-y-10 pt-[clamp(0rem,-1.9501rem+8.3205vw,3.375rem)] pb-17 md:grid-flow-dense md:grid-cols-[55%_1fr]"
