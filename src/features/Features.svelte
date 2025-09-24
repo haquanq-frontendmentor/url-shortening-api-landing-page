@@ -4,7 +4,7 @@
 </script>
 
 {#snippet Feature(icon: string, title: string, description: string)}
-  <li class="relative flex max-w-100 flex-col items-center rounded-md px-6 pb-10 text-center">
+  <li class="relative flex max-w-100 flex-col items-center rounded-md px-6 pb-10 text-center lg:items-start">
     <span class="absolute top-11 right-0 bottom-0 left-0 block rounded-[inherit] bg-white"></span>
     <div
       class="z-10 mb-9 flex aspect-square w-22 items-center justify-center rounded-full bg-purple-950 object-contain"
