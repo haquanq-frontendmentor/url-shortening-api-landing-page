@@ -1,6 +1,7 @@
 <script lang="ts">
   import Boost from "./features/Boost.svelte";
   import Features from "./features/Features.svelte";
+  import Footer from "./features/Footer.svelte";
   import Header from "./features/Header.svelte";
   import Nav from "./features/Nav.svelte";
   import URLShortener from "./features/URLShortener.svelte";
@@ -18,3 +19,4 @@
 <aside>
   <Boost />
 </aside>
+<Footer />
