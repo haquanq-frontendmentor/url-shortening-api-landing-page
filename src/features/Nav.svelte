@@ -53,8 +53,8 @@
 
 <nav>
   <Container>
-    <div class="flex items-center justify-between pt-10 pb-6 md:pt-12">
-      <a class={cn("z-20")} href="/" aria-current="page" aria-label="Homepage">
+    <div class="flex items-center justify-between pt-10 pb-6 md:pt-12 md:pl-[0.125rem]">
+      <a class="z-20 mt-2" href="/" aria-current="page" aria-label="Homepage">
         <svg xmlns="http://www.w3.org/2000/svg" width="121" height="33"
           ><path
             class={cn(menuOpening && "fill-white")}
