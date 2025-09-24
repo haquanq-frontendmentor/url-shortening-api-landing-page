@@ -1,7 +1,8 @@
 <script lang="ts">
-  import Button from "./components/Button.svelte";
+  import Header from "./features/Header.svelte";
   import Nav from "./features/Nav.svelte";
 </script>
 
 <Nav />
+<Header />
 <main></main>
