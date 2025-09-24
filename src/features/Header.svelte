@@ -9,12 +9,12 @@
     <div
       class="grid gap-x-8 gap-y-10 pt-[clamp(0rem,-1.9501rem+8.3205vw,3.375rem)] pb-38 md:grid-flow-dense md:grid-cols-[55%_1fr]"
     >
-      <div class="md:col-start-2">
+      <div class="pb-[1px] md:col-start-2 lg:pl-[1.375rem]">
         <img class="max-w-[150%] md:max-w-[500%]" src={WorkingIllustration} alt="" />
       </div>
-      <div class="flex flex-col items-center text-center md:items-start md:text-start">
+      <div class="flex flex-col items-center text-center md:items-start md:text-start lg:pt-17">
         <h1
-          class="mb-3 text-[clamp(2.625rem,_1.2527rem_+_5.8552vw,_5rem)] leading-[clamp(3rem,_1.4832rem_+_6.4715vw,_5.625rem)] font-bold tracking-tight"
+          class="mb-3 text-[clamp(2.625rem,_1.2527rem_+_5.8552vw,_5rem)] leading-[clamp(3rem,_1.4832rem_+_6.4715vw,_5.625rem)] font-bold tracking-tight lg:mb-0"
         >
           More than just shorter links
         </h1>
