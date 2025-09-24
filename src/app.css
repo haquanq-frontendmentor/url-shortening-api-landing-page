@@ -65,5 +65,6 @@
     --color-black: hsl(0, 8%, 0%);
 
     --radius-*: initial;
+    --radius-md: 0.375rem;
     --radius-lg: 0.625rem;
 }
