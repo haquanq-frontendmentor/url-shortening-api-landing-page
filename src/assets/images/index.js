@@ -1,0 +1,12 @@
+export { default as BoostDesktopBackground } from "./bg-boost-desktop.svg";
+export { default as BoostMobileBackground } from "./bg-boost-mobile.svg";
+export { default as ShortenDesktopBackground } from "./bg-shorten-desktop.svg";
+export { default as ShortenMobileBackground } from "./bg-shorten-mobile.svg";
+export { default as BrandRecognitionIcon } from "./icon-brand-recognition.svg";
+export { default as DetailedRecordsIcon } from "./icon-detailed-records.svg";
+export { default as FacebookIcon } from "./icon-facebook.svg";
+export { default as FullyCustomizableIcon } from "./icon-fully-customizable.svg";
+export { default as InstagramIcon } from "./icon-instagram.svg";
+export { default as PinterestIcon } from "./icon-pinterest.svg";
+export { default as TwitterIcon } from "./icon-twitter.svg";
+export { default as WorkingIllustration } from "./illustration-working.svg";
