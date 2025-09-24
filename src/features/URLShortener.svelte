@@ -3,9 +3,8 @@
   import Button from "../components/Button.svelte";
   import { copyToClipboard } from "../utils/copyToClipboard";
   import { cn } from "../utils/cn";
-  import Container from "../layouts/Container.svelte";
   import { fly } from "svelte/transition";
-  import { flip } from "svelte/animate";
+  import { ShortenDesktopBackground, ShortenMobileBackground } from "../assets/images";
 
   const LOCAL_STORAGE_ITEM_KEY = "shortened-urls";
 
@@ -118,12 +117,14 @@
 <section class="relative -top-21">
   <h2 class="sr-only">Shorten your URL here</h2>
   <form
-    class="flex flex-wrap gap-x-6 gap-y-4 rounded-lg bg-purple-950 px-[clamp(1.5rem,0.0555rem+6.1633vw,4rem)] py-[clamp(1.5rem,0.4888rem+4.3143vw,3.25rem)] md:text-xl"
+    class="relative flex flex-wrap gap-x-6 gap-y-4 overflow-hidden rounded-lg bg-purple-950 px-[clamp(1.5rem,0.0555rem+6.1633vw,4rem)] py-[clamp(1.5rem,0.4888rem+4.3143vw,3.25rem)] md:text-xl"
     novalidate
     use:formAction
   >
-    <label class="sr-only" for="url-input">Your URL</label>
-    <div class="relative grow-[100]">
+    <img class="absolute top-0 right-0 md:hidden" src={ShortenMobileBackground} alt="" />
+    <img class="absolute inset-0 hidden max-w-[150%] object-cover md:block" src={ShortenDesktopBackground} alt="" />
+    <div class="relative z-10 grow-[100]">
+      <label class="sr-only" for="url-input">Your URL</label>
       <div class="relative h-[clamp(3rem,2.4222rem+2.4653vw,4rem)] rounded-md">
         <input
           class="h-full w-full rounded-[inherit] bg-white px-6 md:rounded-lg"
@@ -149,7 +150,7 @@
       >
     </div>
     <Button
-      xClass="text-lg leading-none grow py-[0.9375rem] h-[clamp(3rem,2.4222rem+2.4653vw,4rem)] md:text-xl md:max-w-[11.75rem] md:rounded-lg"
+      xClass="text-lg leading-none grow py-[0.9375rem] z-10 h-[clamp(3rem,2.4222rem+2.4653vw,4rem)] md:text-xl md:max-w-[11.75rem] md:rounded-lg"
       square
       type="submit">Shorten It!</Button
     >
