@@ -19,7 +19,6 @@
   let errorMessage = $state<string>("");
 
   const getShortenedUrl = async (url: string): Promise<string> => {
-    return "Haha";
     const response = await fetch("https://spoo.me", {
       method: "POST",
       headers: {
