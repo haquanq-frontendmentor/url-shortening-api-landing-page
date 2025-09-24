@@ -116,49 +116,47 @@
 {/snippet}
 
 <section class="relative -top-21">
-  <Container>
-    <h2 class="sr-only">Shorten your URL here</h2>
-    <form
-      class="flex flex-wrap gap-x-6 gap-y-4 rounded-lg bg-purple-950 px-[clamp(1.5rem,0.0555rem+6.1633vw,4rem)] py-[clamp(1.5rem,0.4888rem+4.3143vw,3.25rem)] md:text-xl"
-      novalidate
-      use:formAction
-    >
-      <label class="sr-only" for="url-input">Your URL</label>
-      <div class="relative grow-[100]">
-        <div class="relative h-[clamp(3rem,2.4222rem+2.4653vw,4rem)] rounded-md">
-          <input
-            class="h-full w-full rounded-[inherit] bg-white px-6 md:rounded-lg"
-            id="url-input"
-            type="text"
-            name="url"
-            required
-            placeholder="Shorten a link here..."
-            aria-invalid="false"
-            aria-describedby="url-input-hint"
-          />
-          <span
-            class={cn(
-              "pointer-events-none absolute inset-0 rounded rounded-[inherit] border-2 border-transparent",
-              errorMessage !== "" && "border-red-400",
-            )}
-          ></span>
-        </div>
+  <h2 class="sr-only">Shorten your URL here</h2>
+  <form
+    class="flex flex-wrap gap-x-6 gap-y-4 rounded-lg bg-purple-950 px-[clamp(1.5rem,0.0555rem+6.1633vw,4rem)] py-[clamp(1.5rem,0.4888rem+4.3143vw,3.25rem)] md:text-xl"
+    novalidate
+    use:formAction
+  >
+    <label class="sr-only" for="url-input">Your URL</label>
+    <div class="relative grow-[100]">
+      <div class="relative h-[clamp(3rem,2.4222rem+2.4653vw,4rem)] rounded-md">
+        <input
+          class="h-full w-full rounded-[inherit] bg-white px-6 md:rounded-lg"
+          id="url-input"
+          type="text"
+          name="url"
+          required
+          placeholder="Shorten a link here..."
+          aria-invalid="false"
+          aria-describedby="url-input-hint"
+        />
         <span
-          class="mt-2 block text-sm text-red-400 md:absolute md:left-0 md:text-base"
-          id="url-input-hint"
-          hidden={errorMessage === ""}>{errorMessage}</span
-        >
+          class={cn(
+            "pointer-events-none absolute inset-0 rounded rounded-[inherit] border-2 border-transparent",
+            errorMessage !== "" && "border-red-400",
+          )}
+        ></span>
       </div>
-      <Button
-        xClass="text-lg leading-none grow py-[0.9375rem] h-[clamp(3rem,2.4222rem+2.4653vw,4rem)] md:text-xl md:max-w-[11.75rem] md:rounded-lg"
-        square
-        type="submit">Shorten It!</Button
+      <span
+        class="mt-2 block text-sm text-red-400 md:absolute md:left-0 md:text-base"
+        id="url-input-hint"
+        hidden={errorMessage === ""}>{errorMessage}</span
       >
-    </form>
-    <ul class="grid max-w-full grid-cols-1 gap-6 pt-6 md:gap-4" role="list">
-      {#each shortenedURLs as item, index (item)}
-        {@render Result(item.link, item.shortened, index)}
-      {/each}
-    </ul>
-  </Container>
+    </div>
+    <Button
+      xClass="text-lg leading-none grow py-[0.9375rem] h-[clamp(3rem,2.4222rem+2.4653vw,4rem)] md:text-xl md:max-w-[11.75rem] md:rounded-lg"
+      square
+      type="submit">Shorten It!</Button
+    >
+  </form>
+  <ul class="grid max-w-full grid-cols-1 gap-6 pt-6 md:gap-4" role="list">
+    {#each shortenedURLs as item, index (item)}
+      {@render Result(item.link, item.shortened, index)}
+    {/each}
+  </ul>
 </section>
