@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Boost from "./features/Boost.svelte";
   import Features from "./features/Features.svelte";
   import Header from "./features/Header.svelte";
   import Nav from "./features/Nav.svelte";
@@ -14,3 +15,6 @@
     <Features />
   </Container>
 </main>
+<aside>
+  <Boost />
+</aside>
