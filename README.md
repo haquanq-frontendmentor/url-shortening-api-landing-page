@@ -1,47 +1,98 @@
-# Svelte + TS + Vite
+## Frontend Mentor - Shortly URL Shortening API Challenge Solution
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Recommended IDE Setup
+<p>
+  <a href="">
+    <img
+      alt="Solution post"
+      src="https://img.shields.io/badge/Frontendmentor-blue?label=Solution%20on"
+    /></a>
+  <a href="https://haquanq-frontendmentor.github.io/url-shortening-api-landing-page/">
+    <img
+      alt="Live demo"
+      src="https://img.shields.io/badge/Demo-teal?label=Live"
+    /></a>
+  <a href="./LICENSE"
+    ><img
+      allt="MIT License"
+      src="https://img.shields.io/badge/MIT-blue?label=license"
+  /></a>
+</p>
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## Table of Contents
 
-## Need an official Svelte framework?
+- [Project Overview](#sunrise-project-overview)
+- [Tech Stack and Approach](#stars-tech-stack-and-approach)
+- [Local Development](#leaves-local-development)
+- [Deployment](#maple_leaf-deployment)
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+## :sunrise: Project Overview
 
-## Technical considerations
+### Challenge Requirements
 
-**Why use this over SvelteKit?**
+- View the optimal layout for the site depending on their device's screen size
+- Shorten any valid URL
+- See a list of their shortened links, even after refreshing the browser
+- Copy the shortened link to their clipboard in a single click
+- Receive an error message when the `form` is submitted if:
+  - The `input` field is empty
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+### Status
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+Features
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+- [x] Shorten any valid URL using **spoo.me** API
+- [x] Form controls with validations
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+Accessibility
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+- [x] Responsive accross different screen sizes
+- [x] Interactive elements have clear focus indicator
 
-**Why include `.vscode/extensions.json`?**
+### Preview (Desktop)
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+![](./docs/design/desktop-design.jpg)
 
-**Why enable `allowJs` in the TS template?**
+## :stars: Tech Stack and Approach
 
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
+### Built With
 
-**Why is HMR not preserving my local component state?**
+- **HTML5** – Semantic structure
+- **Svelte** – Fine-grained reactivity state management
+- **TailwindCSS** – Utility-first CSS for fast development
+- **TypeScript** - Interactivity and application logic
+- **Vite** - Fast development server, production build and easy configuration
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
+### Approach
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+- Mobile-first workflow for better performance on smaller devices
+- Accessibility guided by [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/)
 
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+## :leaves: Local Development
+
+### Prerequisites
+
+Install the following:
+
+- Git (latest version)
+- Node.js (latest LTS recommended)
+- pnpm (latest version)
+
+### Setup
+
 ```
+git clone https://github.com/haquanq-frontendmentor/url-shortening-api-landing-page.git
+cd url-shortening-api-landing-page
+pnpm install
+```
+
+### Start Development Server
+
+```
+pnpm dev
+```
+
+## :maple_leaf: Deployment
+
+Deployed to Github Pages via Github Actions (manually triggered).
