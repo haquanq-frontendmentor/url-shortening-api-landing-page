@@ -12,7 +12,7 @@
 
   const { children, type = "button", link, xClass }: ButtonProps = $props();
   const className =
-    "bg-blue-400 rounded-full px-10 py-[1.125rem] text-xl font-bold text-white leading-none block hover:opacity-80 transition-opacity";
+    "bg-blue-400 rounded-full px-10 py-[1.125rem] text-xl font-bold text-white leading-none block hover:opacity-80 transition-opacity cursor-pointer";
 </script>
 
 {#if link != undefined}
