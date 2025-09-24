@@ -14,7 +14,7 @@
       </div>
       <div class="flex flex-col items-center text-center md:items-start md:text-start">
         <h1
-          class="mb-3 text-[clamp(2.625rem,_1.2527rem_+_5.8552vw,_5rem)] leading-[clamp(3rem,_1.4832rem_+_6.4715vw,_5.625rem)] font-bold"
+          class="mb-3 text-[clamp(2.625rem,_1.2527rem_+_5.8552vw,_5rem)] leading-[clamp(3rem,_1.4832rem_+_6.4715vw,_5.625rem)] font-bold tracking-tight"
         >
           More than just shorter links
         </h1>
