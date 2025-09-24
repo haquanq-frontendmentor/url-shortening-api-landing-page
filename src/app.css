@@ -28,6 +28,19 @@
     body {
         font-family: "Poppins", system-ui;
     }
+
+    p {
+        @apply text-gray-700;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-gray-950;
+    }
 }
 
 @theme {
