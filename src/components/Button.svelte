@@ -1,0 +1,22 @@
+<script lang="ts">
+  import type { Snippet } from "svelte";
+  import type { HTMLButtonAttributes } from "svelte/elements";
+  import { cn } from "../utils/cn";
+
+  interface ButtonProps {
+    children?: Snippet;
+    type?: HTMLButtonAttributes["type"];
+    link?: string;
+    xClass?: string;
+  }
+
+  const { children, type = "button", link, xClass }: ButtonProps = $props();
+  const className =
+    "bg-blue-400 rounded-full px-10 py-[1.125rem] text-xl font-bold text-white leading-none block hover:opacity-80 transition-opacity";
+</script>
+
+{#if link != undefined}
+  <a class={cn(className, xClass)} href={link}>{@render children?.()}</a>
+{:else}
+  <button class={cn(className, xClass)} {type}>{@render children?.()}</button>
+{/if}
