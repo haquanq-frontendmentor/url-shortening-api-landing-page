@@ -25,6 +25,10 @@
 @import "tailwindcss";
 
 @theme {
+    --font-weight-*: initial;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
     --color-*: initial;
 
     --color-blue-400: hsl(180, 66%, 49%);
