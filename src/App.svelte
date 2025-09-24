@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Features from "./features/Features.svelte";
   import Header from "./features/Header.svelte";
   import Nav from "./features/Nav.svelte";
   import URLShortener from "./features/URLShortener.svelte";
@@ -10,5 +11,6 @@
 <main class="bg-gray-100">
   <Container>
     <URLShortener />
+    <Features />
   </Container>
 </main>
