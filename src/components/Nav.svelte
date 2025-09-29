@@ -2,7 +2,7 @@
   import type { Action } from "svelte/action";
   import Container from "../layouts/Container.svelte";
   import SiteLogo from "../assets/images/logo.svg";
-  import Button from "../components/Button.svelte";
+  import Button from "./common/Button.svelte";
   import { cn } from "../utils/cn";
 
   const showDesktopNav = () => window.matchMedia("(min-width: 48em)").matches;

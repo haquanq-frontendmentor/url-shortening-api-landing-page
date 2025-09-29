@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Boost from "./features/Boost.svelte";
-  import Features from "./features/Features.svelte";
-  import Footer from "./features/Footer.svelte";
-  import Header from "./features/Header.svelte";
-  import Nav from "./features/Nav.svelte";
-  import Shortener from "./features/Shortener.svelte";
+  import Boost from "./components/Boost.svelte";
+  import Features from "./components/Features.svelte";
+  import Footer from "./components/Footer.svelte";
+  import Header from "./components/Header.svelte";
+  import Nav from "./components/Nav.svelte";
+  import Shortener from "./components/Shortener.svelte";
   import Container from "./layouts/Container.svelte";
 </script>
 

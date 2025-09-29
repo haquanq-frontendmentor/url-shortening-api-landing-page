@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Action } from "svelte/action";
-  import Button from "../components/Button.svelte";
+  import Button from "./common/Button.svelte";
   import { copyToClipboard } from "../utils/copyToClipboard";
   import { cn } from "../utils/cn";
   import { fly } from "svelte/transition";

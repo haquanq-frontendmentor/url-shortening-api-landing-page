@@ -1,6 +1,6 @@
 <script>
   import { BoostDesktopBackground, BoostMobileBackground } from "../assets/images";
-  import Button from "../components/Button.svelte";
+  import Button from "./common/Button.svelte";
 </script>
 
 <section

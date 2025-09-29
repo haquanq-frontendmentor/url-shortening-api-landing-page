@@ -1,7 +1,7 @@
 <script>
   import Container from "../layouts/Container.svelte";
   import WorkingIllustration from "../assets/images/illustration-working.svg";
-  import Button from "../components/Button.svelte";
+  import Button from "./common/Button.svelte";
 </script>
 
 <header class="overflow-x-hidden">
