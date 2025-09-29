@@ -4,7 +4,7 @@
   import Footer from "./features/Footer.svelte";
   import Header from "./features/Header.svelte";
   import Nav from "./features/Nav.svelte";
-  import URLShortener from "./features/URLShortener.svelte";
+  import Shortener from "./features/Shortener.svelte";
   import Container from "./layouts/Container.svelte";
 </script>
 
@@ -12,7 +12,7 @@
 <Header />
 <main class="bg-gray-100">
   <Container>
-    <URLShortener />
+    <Shortener />
     <Features />
   </Container>
 </main>
