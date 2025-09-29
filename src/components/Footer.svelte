@@ -33,7 +33,7 @@
         >
       </a>
 
-      <nav class="w-full text-center lg:pt-1 lg:pl-50 lg:text-start">
+      <nav class="w-full text-center lg:pt-1 lg:pl-50 lg:text-start" aria-label="Footer navigation">
         <ul class="grid gap-12 md:grid-cols-3">
           {@render NavItem("Features", ["Link Shortening", "Branded Links", "Analytics"])}
           {@render NavItem("Resources", ["Blog", "Developers", "Support"])}

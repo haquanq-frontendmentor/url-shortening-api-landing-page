@@ -51,7 +51,7 @@
   };
 </script>
 
-<nav>
+<nav aria-label="Header navigation">
   <Container>
     <div class="flex items-center justify-between pt-10 pb-6 md:pt-12 md:pl-[0.125rem]">
       <a class="z-20 mt-2" href="/" aria-current="page" aria-label="Homepage">
