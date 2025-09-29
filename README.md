@@ -52,7 +52,7 @@ Accessibility
 
 ### Preview (Desktop)
 
-![](./docs/design/desktop-design.jpg)
+![](./docs/preview.jpg)
 
 ## :stars: Tech Stack and Approach
 
