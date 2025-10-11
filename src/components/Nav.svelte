@@ -54,7 +54,7 @@
 <nav aria-label="Header navigation">
   <Container>
     <div class="flex items-center justify-between pt-10 pb-6 md:pt-12 md:pl-[0.125rem]">
-      <a class="z-20 mt-2" href="/" aria-current="page" aria-label="Homepage">
+      <a class="z-20 mt-2" href="/" aria-label="Homepage">
         <svg xmlns="http://www.w3.org/2000/svg" width="121" height="33"
           ><path
             class={cn(menuOpening && "fill-white")}
