@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
+  import { WorkingIllustration } from "../assets/images";
   import Container from "../layouts/Container.svelte";
-  import WorkingIllustration from "../assets/images/illustration-working.svg";
   import Button from "./common/Button.svelte";
 </script>
 
-<header class="overflow-x-hidden">
+<section class="overflow-hidden bg-white">
   <Container>
     <div
       class="grid gap-x-8 gap-y-10 pt-[clamp(0rem,-1.9501rem+8.3205vw,3.375rem)] pb-38 md:grid-flow-dense md:grid-cols-[55%_1fr]"
@@ -23,8 +23,8 @@
         >
           Build your brand’s recognition and get detailed insights on how your links are performing
         </p>
-        <Button>Get Started</Button>
+        <Button link="">Get Started</Button>
       </div>
     </div>
   </Container>
-</header>
+</section>
