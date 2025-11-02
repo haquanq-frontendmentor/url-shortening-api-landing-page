@@ -1,0 +1,15 @@
+{
+  "name": "URL Shortening API Landing Page",
+  "featured": true,
+  "colors:": {
+    "brand": "#2CD0CF"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/url-shortening-api-landing-page/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "intermediate",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/mobile-first-responsive-url-shortener-app-with-svelte-tailwindcss-PeMPNUSjsj"
+  }
+}
