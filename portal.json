@@ -1,7 +1,7 @@
 {
   "name": "URL Shortening API Landing Page",
-  "featured": true,
-  "colors:": {
+  "featured": false,
+  "colors": {
     "brand": "#2CD0CF"
   },
   "images": {
